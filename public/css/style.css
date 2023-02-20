@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,400;1,300&family=Lobster&family=Playfair+Display&display=swap");
+
+.navbar {
+  padding: 0;
+}
+.navbar-brand {
+  font-family: "Lobster", cursive;
+  font-size: 35px;
+  padding: 0;
+  margin-left: 0.2%;
+}
+.nav-link {
+  color: #373636;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-item {
+  text-align: center;
+  font-size: 20px;
+}
+.nav-link:hover {
+  background-color: #32acae;
+  color: #fff;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.carousel-item {
+  height: 280px;
+}
+.grey {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(59, 59, 59, 0.3);
+}
+.carousel-item img {
+  width: 100%;
+  height: 280px;
+}
+.carousel-item .imgContent {
+  position: absolute;
+  margin-top: -220px;
+  width: 100%;
+  font-family: serif;
+  text-align: center;
+  color: #fff;
+}
+.imgContent h5 {
+  margin-bottom: 20px;
+  font-family: "Lobster", cursive;
+}
+.imgContent h2 {
+  font-family: serif;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+button {
+  border: none;
+  padding: 5px 10px;
+  margin-left: 5%;
+  color: #fff;
+  background-color: #32acae;
+  border-radius: 6px;
+}
+.imgContent .order {
+  margin-left: 0;
+  background-color: rgb(183, 25, 25);
+}
+@media screen and (min-width: 1000px) {
+  .navbar-nav {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .nav-item {
+    margin-left: 7%;
+  }
+  .nav-link:hover {
+    background-color: unset;
+    color: red;
+  }
+  .carousel-item {
+    height: 450px;
+  }
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+  }
+  .carousel-item .imgContent {
+    margin-top: -340px;
+  }
+  .imgContent h5 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .imgContent h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+  .imgContent button {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+}
+
+/* About us */
+.about h4 {
+  font-family: "Lobster";
+  text-align: center;
+  margin-top: 20px;
+}
+.about p {
+  padding: 10px 10%;
+}
+.about p i {
+  font-size: 16px;
+  word-spacing: 2px;
+  color: #1d1c1c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+}
+.abouth2 {
+  font-size: 50px;
+}
+
+/* gallery */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* contact us */
+.new {
+  background-image: url("images/bg4.jpg");
+}
+.new h1 {
+  font-size: 40px;
+  padding: 10px 0;
+}
+.contact {
+  padding: 30px 10%;
+}
+.contact div {
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+}
+.contact hr {
+  width: 60%;
+  margin-left: 20%;
+  border: 2px solid grey;
+}
+.contact div .i {
+  font-size: 30px;
+  font-family: "Lobster";
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+}
+.contact div h5 {
+  width: 50%;
+  color: grey;
+  margin-left: 25%;
+  font-size: 19px;
+}
+.contact iframe {
+  margin: 20px 5%;
+  width: 90%;
+  height: 400px;
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    padding: 0px 5%;
+  }
+  .contact div {
+    display: block;
+    padding: 10px;
+    width: 90%;
+    margin: 20px 5%;
+    border: 1px solid rgb(177, 175, 175);
+    border-radius: 10px;
+  }
+  .contact hr {
+    width: 70%;
+    margin: 10px 15% 15px 15%;
+  }
+  .contact div h5 {
+    width: 100%;
+    margin: 0;
+  }
+  .contact iframe {
+    width: 94%;
+    margin-left: 3%;
+  }
+}
