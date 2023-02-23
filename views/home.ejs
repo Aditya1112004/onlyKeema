@@ -58,7 +58,20 @@
 </div>
 
 <!-- special -->
-<%-include("partials/special")%>
+<div class="special">
+  <h1>OUR SPECIALS</h1>
+  <ul>
+    <%foodItem.forEach(food => { %>
+    <li>
+      <div><img src="<%=food.img%>" alt="" /></div>
+      <div class="menutext">
+        <p><%=food.name%></p>
+        <i>Only Keema</i>
+      </div>
+    </li>
+    <% }) %>
+  </ul>
+</div>
 
 <!-- did you know -->
 <%-include("partials/didYouKnow")%>
