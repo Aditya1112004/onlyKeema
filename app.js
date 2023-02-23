@@ -13,19 +13,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/static", express.static(path.join(__dirname, "public")));
 app.use(express.static("public"));
 
+const foodItem = require("./allAPI");
+
 //home
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", { foodItem: foodItem });
 });
 
 //home
 app.get("/home", (req, res) => {
-  res.render("home");
+  res.render("home", { foodItem: foodItem });
 });
 
 //menu
 app.get("/menu", (req, res) => {
-  res.render("menu");
+  res.render("menu", { foodItem: foodItem });
 });
 
 //gallery
